@@ -1,0 +1,51 @@
+[
+    {
+      "reviewId": 1,
+      "name": "John Doe",
+      "userImg": "https://randomuser.me/api/portraits/men/10.jpg",
+      "review": "I had a fantastic experience with the teeth whitening service! The procedure was quick and painless, and the results were immediate. My smile looks brighter than ever, and I feel so much more confident. Highly recommend it to anyone looking to enhance their smile!"
+    },
+    {
+      "reviewId": 2,
+      "name": "Jane Smith",
+      "userImg": "https://randomuser.me/api/portraits/women/15.jpg",
+      "review": "The dental implant procedure was much smoother than I expected. The staff was professional and supportive throughout the process, and now I have a brand new tooth that looks and feels like the real thing. I'm so happy with the results and would definitely come back for any other treatments!"
+    },
+    {
+      "reviewId": 3,
+      "name": "Alice Johnson",
+      "userImg": "https://randomuser.me/api/portraits/women/22.jpg",
+      "review": "I’ve been wearing braces for six months, and I am already seeing amazing results. The orthodontic team took great care in explaining each step of the process. I couldn’t be happier with how my smile is transforming!"
+    },
+    {
+      "reviewId": 4,
+      "name": "Michael Brown",
+      "userImg": "https://randomuser.me/api/portraits/men/3.jpg",
+      "review": "I had a root canal therapy done at this clinic and was really nervous about it. However, the procedure was surprisingly painless, and the team made sure I was comfortable the entire time. The recovery was smooth, and my tooth feels great now. Thank you for the excellent care!"
+    },
+    {
+      "reviewId": 5,
+      "name": "Sarah Williams",
+      "userImg": "https://randomuser.me/api/portraits/women/5.jpg",
+      "review": "I had a deep cleaning done here and was really impressed with the thoroughness and professionalism. My gums feel healthier, and my teeth are sparkling. I will definitely continue with regular cleanings at this clinic!"
+    },
+    {
+      "reviewId": 6,
+      "name": "David Lee",
+      "userImg": "https://randomuser.me/api/portraits/men/4.jpg",
+      "review": "The veneers I got have completely transformed my smile! The staff made sure I was comfortable throughout the procedure, and now I can't stop smiling. My teeth look perfect, and the whole process was smooth and quick."
+    },
+    {
+      "reviewId": 7,
+      "name": "Emily Clark",
+      "userImg": "https://randomuser.me/api/portraits/women/12.jpg",
+      "review": "I was hesitant about getting my wisdom teeth extracted, but the procedure went smoothly and the recovery was quicker than I thought. The staff was very attentive, and I felt well taken care of throughout the whole process."
+    },
+    {
+      "reviewId": 8,
+      "name": "James Wilson",
+      "userImg": "https://randomuser.me/api/portraits/men/20.jpg",
+      "review": "I highly recommend this clinic for gum treatment. After my visit, my gums feel healthier, and I no longer experience bleeding or discomfort. The dentist provided clear instructions, and the results have been great!"
+    }
+  ]
+  
