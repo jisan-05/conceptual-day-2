@@ -5,7 +5,7 @@ const MyAppointments = () => {
     
     return (
         <div>
-            My Appointments
+            <h3 className='text-4xl font-semibold'>My Appointments</h3>
         </div>
     );
 };

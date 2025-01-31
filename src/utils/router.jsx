@@ -8,6 +8,7 @@ import Profile from "../components/Profile/Profile";
 import Details from "../components/Details/Details";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
+import PrivetRoute from "../components/PrivetRoute/PrivetRoute";
 
 const router = createBrowserRouter([
     {
@@ -34,15 +35,19 @@ const router = createBrowserRouter([
             },
             {
                 path:'/myappointments',
-                element:<MyAppointments></MyAppointments>
+                element:<PrivetRoute>
+                    <MyAppointments></MyAppointments>
+                </PrivetRoute>
             },
             {
                 path:'/profile',
-                element:<Profile></Profile>
+                element:<PrivetRoute>
+                    <Profile></Profile>
+                </PrivetRoute>
             },
             {
                 path:'/details/:id',
-                element:<Details></Details>,
+                element:<PrivetRoute><Details></Details></PrivetRoute>,
                 loader: async({params}) => {
                     const res = await fetch('/service.json')
                     const data = await res.json();

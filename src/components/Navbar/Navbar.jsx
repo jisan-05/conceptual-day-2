@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import './Navbar.css';
+import "./Navbar.css";
+import { authContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
+    const { handleLogout, user } = useContext(authContext);
+
     const links = (
         <>
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/alltreatments'>All Treatments</NavLink></li>
-            <li><NavLink to='/myappointments'>My appointments</NavLink></li>
-            <li><NavLink to='/profile'>Profile</NavLink></li>
+            <li>
+                <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+                <NavLink to="/alltreatments">All Treatments</NavLink>
+            </li>
+            <li>
+                <NavLink to="/myappointments">My appointments</NavLink>
+            </li>
+            <li>
+                <NavLink to="/profile">Profile</NavLink>
+            </li>
         </>
     );
+
+    const signOut = () => {
+        handleLogout();
+    };
 
     return (
         <div>
@@ -44,15 +59,32 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost text-xl">TEETH WIZARD</Link>
+                    <Link to="/" className="btn btn-ghost text-xl">
+                        TEETH WIZARD
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">{links}</ul>
                 </div>
                 <div className="navbar-end">
-                    
-                    <Link to='/login'><button className="btn bg-blue-500 border-none shadow-none text-white">Login</button></Link>
-                    
+                    <div>
+                        {user ? (
+                            <div className="flex gap-2">
+                                <img src={user?.photoURL} alt="" className="w-12 h-12 rounded-full" />
+                                <button onClick={signOut} className="btn">
+                                    SignOut
+                                </button>
+                            </div>
+                        ) : (
+                            <div>
+                                <Link to="/login">
+                                    <button className="btn bg-blue-500 border-none shadow-none text-white">
+                                        Login
+                                    </button>
+                                </Link>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
